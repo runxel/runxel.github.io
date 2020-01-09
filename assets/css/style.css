@@ -16,7 +16,7 @@
 	--hazard-col: #EC5F41; /* screaming orange */
 	--trans-dflt: 0.135s cubic-bezier(.79,.14,.15,.86); /* default transition values; circular instead of ease-in-out */
 	--trans-all: all var(--trans-dflt); /* simple catch all */
-	--max-content-width: 1400px;
+	--max-content-width: 65rem;
 }
 
 /* ---------------------- GLOBALS ----------------------*/
