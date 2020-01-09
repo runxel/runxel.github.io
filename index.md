@@ -2,6 +2,5 @@
 # Frontmatter
 layout: index
 title: runxel
-custom_css: greet.css
+custom_css: greet
 ---
-

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* custom css for 404 not found*/
+.site {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	text-align: center;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+section p {
+	padding-top: 0.9rem;
+}
