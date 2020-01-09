@@ -1,20 +1,25 @@
 {% include head.html %}
 
-
-		<h2>{{ page.title }}</h2>
-
-		<nav>
-			<ul>
-				{% for item in site.data.external.exlnk %}
-				<li>
-					{% if item.icon %}
-						<img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ item.icon }}.svg" />
-					{% endif %}
-					<a href="{{ item.url }}">{{ item.title }}</a>
-				</li>
-				{% endfor %}
-			</ul>
-		</nav>
+		<main class="greet">
+			<div class="trojan"></div>
+			
+			<h2>{{ page.title }}</h2>
+			
+			<nav class="ext-links">
+				<ul>
+					{% for item in site.data.external.exlnk %}
+					<li>
+						{% if item.icon %}
+							<img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ item.icon }}.svg" />
+						{% elsif item.emoji %}
+							<span class="emoji">{{ item.emoji }}</span>
+						{% endif %}
+						<a href="{{ item.url }}">{{ item.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</main>
 
 	</body>
 </html>

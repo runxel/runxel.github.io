@@ -7,8 +7,9 @@ exlnk:
 - title: my webpage
   url: https://lucasbecker.de
 
-- title: 🦏 Rhino Secrets
+- title: Rhino Secrets
   url: rhino-secrets
+  emoji: 🦏
 
 - title: GitHub
   url: https://github.com/runxel

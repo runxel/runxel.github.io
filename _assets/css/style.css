@@ -40,7 +40,6 @@ html {
 	background: var(--contrast-col);
 	color: var(--bg-col);
 	text-shadow: none;
-	text-decoration: none;
 }
 
 body {
