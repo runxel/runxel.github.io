@@ -7,9 +7,8 @@ body {
     justify-content: center;
 }
 
-div.trojan {
+div.trojan img {
     outline: 1px solid #000000;
-    background:#C0C0C0;
     border-width: 1px;
     border-style: solid;
     border-color:rgb(241, 241, 241) #808080 #808080 rgb(241, 241, 241);
