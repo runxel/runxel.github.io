@@ -1,0 +1,13 @@
+# Looping through external links
+ext_title: External Links
+exlnk:
+
+- title: my webpage
+  url: https://lucasbecker.de
+
+- title: 🦏 Rhino Secrets
+  url: rhino-secrets
+
+- title: GitHub
+  url: https://github.com/runxel
+  icon: github
