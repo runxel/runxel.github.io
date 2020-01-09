@@ -11,7 +11,9 @@
 		<!-- Main CSS -->
 		<link rel="stylesheet" href="{{ '/_assets/css/style.css' | relative_url }}">
 		<!-- Custom CSS -->
-		<link rel="stylesheet" href="{{ '/_assets/css/' page.custom_css | relative_url }}"/>
+		{% if page.custom_css %}
+			<link rel="stylesheet" href="{{ '/_assets/css/' page.custom_css | relative_url }}"/>
+		{% endif %}
 		<link rel="shortcut icon" type="image/x-icon" href="{{ '/_assets/favicon.ico' | relative_url }}"/>
 
 		<title>{{ page.title }}</title>

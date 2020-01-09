@@ -8,7 +8,7 @@
 				{% for item in site.data.external.exlnk %}
 				<li>
 					{% if item.icon %}
-						<img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/' {{ item.icon }}'.svg" />
+						<img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ item.icon }}.svg" />
 					{% endif %}
 					<a href="{{ item.url }}">{{ item.title }}</a>
 				</li>
