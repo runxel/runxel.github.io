@@ -43,7 +43,7 @@ nav.ext-links ul li a {
 }
 
 nav.ext-links ul li a:hover {
-    color: var(--hazard-col) !important;
+    color: rgb(159, 5, 19) !important;
 }
 
 nav .icon {

@@ -12,7 +12,7 @@
 	--litegrey-col: rgba(0,0,0,.06);
 	--contrast-col: #cece37;
 	--mint-col: #C4E6C3; /* soft mint green */
-	--red-col: #733B40; /* dampened red */
+	--red-col: rgb(82, 37, 41); /* dampened red */
 	--hazard-col: #EC5F41; /* screaming orange */
 	--trans-dflt: 0.135s cubic-bezier(.79,.14,.15,.86); /* default transition values; circular instead of ease-in-out */
 	--trans-all: all var(--trans-dflt); /* simple catch all */
