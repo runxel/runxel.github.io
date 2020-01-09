@@ -45,3 +45,8 @@ nav.ext-links ul li a {
 nav.ext-links ul li a:hover {
     color: var(--hazard-col) !important;
 }
+
+nav .icon {
+    position: relative;
+    top: 3px;
+}

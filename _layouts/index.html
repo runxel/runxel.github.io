@@ -12,7 +12,7 @@
 					{% for item in site.data.external.exlnk %}
 					<li>
 						{% if item.icon %}
-							<img height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ item.icon }}.svg" />
+							<img class="icon" height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ item.icon }}.svg" />
 						{% elsif item.emoji %}
 							<span class="emoji">{{ item.emoji }}</span>
 						{% endif %}
