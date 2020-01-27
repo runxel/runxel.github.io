@@ -33,8 +33,11 @@ nav.ext-links {
 			padding: 4px 10px;
 			margin: 0 20px;
 
-			a:hover {
-				color: #000000 !important;
+			a {
+				text-decoration: none;;
+				&:hover {
+					color: #000000 !important;
+				}
 			}
 		}
 	}
