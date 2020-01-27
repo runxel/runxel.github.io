@@ -1,0 +1,139 @@
+/* ---------------------- GLOBALS ----------------------*/
+
+html {
+	font-size: $base-font-size;
+	box-sizing: border-box;
+	scrollbar-color: $scrollbar-color;
+	scrollbar-width: thin;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+::-moz-selection,
+::selection {
+	background: $contrast-col;
+	color: $bg-col;
+	text-shadow: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: $base-font-family;
+	font-size: 1.4rem;
+	height: 100%;
+	width: 100%;
+	color: $txt-col;
+	background: url("/assets/img/background.jpg") $bg-col;
+}
+
+a {
+	color: currentColor;
+	text-decoration: underline;
+	@include transition($what:color);
+	&:hover {
+		color: $hazard-col;
+		@include transition($what:color);
+	}
+}
+::-moz-focus-inner {
+	/* disable that focus thing Firefox is doing */
+	border: 0;
+}
+
+figure > a {
+	background: none !important;
+}
+
+li {
+	list-style: none;
+}
+
+strong, b {
+	font-weight: 700;
+}
+
+del {
+	text-decoration: line-through;
+}
+ins {
+	text-decoration: underline wavy $mint-col;
+}
+
+code, pre > code {
+	font-family: $base-font-family;
+	font-size: 1.1rem;
+	line-height: 1.42;
+	hyphens: none;
+	tab-size: 4;
+	direction: ltr;
+	text-align: left;
+	white-space: pre-wrap;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	-webkit-text-size-adjust: 100%; /* Prevents adjustments of font size after orientation changes in iOS. */
+}
+pre > code {
+	font-size: 1.1rem;
+	display: block;
+}
+:not(pre) > code, :not(pre) > code[class*="language-"] {
+	/* inline code */
+	padding: 3px 5px;
+	background: $litegrey-col;
+	border-radius: 4px;
+}
+div.code-toolbar + pre > code {
+	/* subtitle for code blocks */
+	font-size: 0.7em;
+	margin-bottom: 1rem;
+}
+
+kbd {
+	font-family: $base-font-family;
+	background-color: #fafbfc;
+	border: 1px solid $mid-grey-col;
+	border-radius: 4px / 5px;
+	box-shadow: inset 0 -0.175rem 0 $contrast-col;
+	color: $txt-lt-col;
+	margin: 0 2px;
+	padding: 0.2rem 0.4rem;
+	vertical-align: middle;
+	font-size: 80%;
+	position: relative;
+	bottom: 0.2rem;
+}
+
+table {
+	text-align: left;
+	border-collapse: collapse; /* means no rounded corners */
+	border: 1px solid $mid-grey-col;
+	font-size: 0.8em;
+	th, td {
+		padding: 8px 10px;
+	}
+	th { /* TABLE HEAD */
+		font-weight: 400;
+		color: $txt-lt-col;
+		background-color: #ebe7d9;
+		border: 1px solid $litegrey-col;
+		border-bottom-color: #c9c9c9;
+		text-shadow: 0 1px $bg-col;
+		letter-spacing: 0.05em;
+	}
+	td {
+		border: 1px solid $litegrey-col;
+	}
+	tr:nth-child(odd) {
+		background-color: rgba(255,255,255,0.3);
+	}
+	tr:nth-child(even) {
+		background-color: rgba(40,38,37,0.05);
+	}
+}

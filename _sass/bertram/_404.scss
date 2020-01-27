@@ -1,6 +1,5 @@
-@charset "UTF-8";
+/* custom css for 404 */
 
-/* custom css for 404 not found*/
 .site {
 	display: flex;
 	justify-content: center;
@@ -11,11 +10,8 @@
 }
 
 #error-img {
+	@include img;
 	margin-bottom: 1rem;
-	outline: 1px solid #000000;
-	border-width: 1px;
-	border-style: solid;
-	border-color:rgb(241, 241, 241) #808080 #808080 rgb(241, 241, 241);
 }
 
 h1 {

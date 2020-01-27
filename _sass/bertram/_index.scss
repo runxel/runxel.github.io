@@ -1,0 +1,46 @@
+/* custom css for the start page */
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+div.trojan img {
+	@include img;
+}
+
+main.greet {
+	max-width: $max-content-width;
+	display: grid;
+	row-gap: 3rem;
+	padding: 6rem;
+	text-align: center;
+}
+
+nav.ext-links {
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+		li {
+			@include outline;
+			background: mix(#C0C0C0, $bg-col, 10%);
+			border-radius: 5px;
+			border-width: 4px 3.5px 3.5px 4px;
+			border-style: solid;
+			border-color:$txt-col #000000 #000000 $txt-col;
+			padding: 4px 10px;
+			margin: 0 20px;
+
+			a:hover {
+				color: #000000 !important;
+			}
+		}
+	}
+}
+
+nav .icon {
+	position: relative;
+	top: 3px;
+}

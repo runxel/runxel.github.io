@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+// "Bertram" is the base style
+
+$content-width:     65rem !default;
+$max-content-width: 65rem !default;
+$base-font-family:  'Share Tech Mono', monospace !default;
+$base-font-size:    15px !default;
+
+$bg-col: #31322c !default;
+$txt-col: #f5f5cb !default; /* standard text color */
+$scrollbar-color: #626251 $bg-col !default; /* scrollbar styling */
+$txt-lt-col: #777 !default; /* lighter grey */
+$mid-grey-col: rgba(0,0,0,.25) !default;
+$litegrey-col: rgba(0,0,0,.06) !default;
+$contrast-col: #cece37 !default;
+$mint-col: #C4E6C3 !default; /* soft mint green */
+$red-col: rgb(82, 37, 41) !default; /* dampened red */
+$hazard-col: #EC5F41 !default; /* screaming orange */
+
+/* ---------------------- MIXINS ----------------------*/
+
+@mixin outline {
+	box-shadow: 0 0 0 1.5px #000000;
+}
+
+@mixin img {
+	@include outline;
+	border-width: 1px;
+	border-style: solid;
+	border-color:rgb(241, 241, 241) #808080 #808080 rgb(241, 241, 241);
+}
+
+@mixin transition($time: 0.135s, $what: all) {
+	transition: $time $what cubic-bezier(.79,.14,.15,.86);
+}
