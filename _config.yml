@@ -6,7 +6,7 @@ title: runxel
 description: >-
   Homepage of runxel, the creator of GDL Sublime.
 # baseurl: 
-github_username:  runxel
+github_username: runxel
 permalink: pretty
 plugins:
   - jekyll-sitemap
