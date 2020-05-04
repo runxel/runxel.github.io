@@ -7,7 +7,7 @@ _posts/
 .jekyll-metadata
 vendor
 
-OB/
+assets/fonts-alt/
 
 Gemfile
 *.lock
