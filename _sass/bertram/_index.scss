@@ -3,10 +3,23 @@
 body {
 	display: flex;
 	justify-content: center;
+	font-style: italic;
 }
 
 div.trojan img {
 	@include img;
+}
+
+h1.title {
+	letter-spacing: 0.4em;
+	font-weight: 700;
+	line-height: 0; // dirty trick to reduce the gap to the <p>
+}
+
+p.motto {
+	font-size: 0.8em;
+	letter-spacing: 0.06em;
+	word-spacing: 0.5em;
 }
 
 main.greet {
@@ -17,6 +30,10 @@ main.greet {
 	text-align: center;
 }
 
+.emoji {
+	font-style: normal;
+}
+
 nav.ext-links {
 	ul {
 		display: flex;
@@ -24,19 +41,25 @@ nav.ext-links {
 		justify-content: space-between;
 		
 		li {
-			@include outline;
-			background: mix(#C0C0C0, $bg-col, 10%);
-			border-radius: 5px;
-			border-width: 4px 3.5px 3.5px 4px;
-			border-style: solid;
-			border-color:$txt-col #000000 #000000 $txt-col;
-			padding: 4px 10px;
-			margin: 0 20px;
-
 			a {
-				text-decoration: none;;
-				&:hover {
-					color: #000000 !important;
+				@include outline;
+				padding: 4px 10px;
+				margin: 0 20px;
+				background: mix(#C0C0C0, $bg-col, 10%);
+				border-radius: 5px;
+				border-width: 4px 3.5px 3.5px 4px;
+				border-style: solid;
+				border-color: $txt-col #000000 #000000 $txt-col;
+				text-decoration: none;
+				transition: 0.1s box-shadow linear;
+				&:hover, &:focus {
+					color: darken($color: $txt-col, $amount: 30) !important;
+					box-shadow: 0px 0px 15px darken($color: $txt-col, $amount: 50);
+					transition: 0.3s box-shadow linear;
+				}
+				&:active {
+					border-color: #000000 $txt-col $txt-col #000000;
+					box-shadow: none;
 				}
 			}
 		}
