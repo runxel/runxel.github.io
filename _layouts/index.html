@@ -2,21 +2,25 @@
 
 		<main class="greet">
 			<div class="trojan">
-				<img src="/assets/img/horse.jpg">
+				<img src="/assets/img/horse.jpg" alt="Runxel, The Trojan Horse">
 			</div>
 			
-			<h2>{{ page.title }}</h2>
+			<h1 class="title">{{ page.title }}</h1>
+
+			<p class="motto">Powered by Cunning&trade;</p>
 			
 			<nav class="ext-links">
 				<ul>
 					{% for item in site.data.external.exlnk %}
 					<li>
+						<a href="{{ item.url }}">
 						{% if item.icon %}
-							<img class="icon" height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ item.icon }}.svg" />
+							<img class="icon" height="24" width="24" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/{{ item.icon }}.svg" alt="icon"/>
 						{% elsif item.emoji %}
 							<span class="emoji">{{ item.emoji }}</span>
 						{% endif %}
-						<a href="{{ item.url }}">{{ item.title }}</a>
+						<span class="lnktxt">{{ item.title }}</span>
+						</a>
 					</li>
 					{% endfor %}
 				</ul>
