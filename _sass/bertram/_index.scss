@@ -32,13 +32,13 @@ main.greet {
 
 .emoji {
 	font-style: normal;
+	filter: saturate(0%);
 }
 
 nav.ext-links {
 	ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		display: grid;
+		gap: 40px 10px;
 		
 		li {
 			a {

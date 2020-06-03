@@ -8,6 +8,10 @@ exlnk:
   url: https://lucasbecker.de
   emoji: 🌐
 
+- title: Archicad Wiki
+  url: archicad-wiki
+  icon: archicad
+
 - title: Rhino Secrets
   url: rhino-secrets
   emoji: 🦏
