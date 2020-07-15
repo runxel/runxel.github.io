@@ -12,6 +12,10 @@ exlnk:
   url: archicad-wiki
   icon: archicad
 
+- title: Archicad Objects
+  url: https://runxel.xyz/archicad-objects/
+  icon: archicad
+
 - title: Rhino Secrets
   url: rhino-secrets
   emoji: 🦏

@@ -69,4 +69,5 @@ nav.ext-links {
 nav .icon {
 	position: relative;
 	top: 3px;
+	filter: invert(90%) sepia(70%); //makes the icons light instead of dark
 }
