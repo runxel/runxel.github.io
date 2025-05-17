@@ -3,9 +3,8 @@ exlnk:
 
 - title: Colorizah
   url: /colorizah/
-  icon: .
+  icon: colorizah.png
 
 - title: Kostengruppensuche
   url: /kostengruppensuche/
-  icon: .
-  
+  icon: kgr.png
