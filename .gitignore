@@ -14,3 +14,33 @@ Gemfile
 
 # custom
 notes.txt
+
+
+# IDE stuff
+*.sublime-*
+*.code-workspace
+.vscode/*
+!.vscode/tasks.json
+
+#------------------------------------------------------------------------------
+# Thumbnails
+._*
+Thumbs.db
+.Bridge*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+**/Network Trash Folder/
+**/Temporary Items/
+.apdisk
