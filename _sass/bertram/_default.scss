@@ -5,6 +5,8 @@ html {
 	box-sizing: border-box;
 	scrollbar-color: $scrollbar-color;
 	scrollbar-width: thin;
+	// styling the macOS rubberband
+	background: $bg-col;
 }
 
 *,
@@ -36,18 +38,20 @@ body {
 a {
 	color: currentColor;
 	text-decoration: underline;
-	@include transition($what:color);
+	@include transition($what: color);
+
 	&:hover {
 		color: $hazard-col;
-		@include transition($what:color);
+		@include transition($what: color);
 	}
 }
+
 ::-moz-focus-inner {
 	/* disable that focus thing Firefox is doing */
 	border: 0;
 }
 
-figure > a {
+figure>a {
 	background: none !important;
 }
 
@@ -55,18 +59,21 @@ li {
 	list-style: none;
 }
 
-strong, b {
+strong,
+b {
 	font-weight: 700;
 }
 
 del {
 	text-decoration: line-through;
 }
+
 ins {
 	text-decoration: underline wavy $mint-col;
 }
 
-code, pre > code {
+code,
+pre>code {
 	font-family: $base-font-family;
 	font-size: 1.1rem;
 	line-height: 1.42;
@@ -78,19 +85,24 @@ code, pre > code {
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
-	-webkit-text-size-adjust: 100%; /* Prevents adjustments of font size after orientation changes in iOS. */
+	-webkit-text-size-adjust: 100%;
+	/* Prevents adjustments of font size after orientation changes in iOS. */
 }
-pre > code {
+
+pre>code {
 	font-size: 1.1rem;
 	display: block;
 }
-:not(pre) > code, :not(pre) > code[class*="language-"] {
+
+:not(pre)>code,
+:not(pre)>code[class*="language-"] {
 	/* inline code */
 	padding: 3px 5px;
 	background: $litegrey-col;
 	border-radius: 4px;
 }
-div.code-toolbar + pre > code {
+
+div.code-toolbar+pre>code {
 	/* subtitle for code blocks */
 	font-size: 0.7em;
 	margin-bottom: 1rem;
@@ -113,13 +125,18 @@ kbd {
 
 table {
 	text-align: left;
-	border-collapse: collapse; /* means no rounded corners */
+	border-collapse: collapse;
+	/* means no rounded corners */
 	border: 1px solid $mid-grey-col;
 	font-size: 0.8em;
-	th, td {
+
+	th,
+	td {
 		padding: 8px 10px;
 	}
-	th { /* TABLE HEAD */
+
+	th {
+		/* TABLE HEAD */
 		font-weight: 400;
 		color: $txt-lt-col;
 		background-color: #ebe7d9;
@@ -128,13 +145,16 @@ table {
 		text-shadow: 0 1px $bg-col;
 		letter-spacing: 0.05em;
 	}
+
 	td {
 		border: 1px solid $litegrey-col;
 	}
+
 	tr:nth-child(odd) {
-		background-color: rgba(255,255,255,0.3);
+		background-color: rgba(255, 255, 255, 0.3);
 	}
+
 	tr:nth-child(even) {
-		background-color: rgba(40,38,37,0.05);
+		background-color: rgba(40, 38, 37, 0.05);
 	}
 }
