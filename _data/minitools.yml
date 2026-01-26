@@ -3,11 +3,14 @@ exlnk:
 
 - title: Colorizah
   url: /colorizah/
-  icon: colorizah.png
+  icon: win98-paint_old-0.png
 
 - title: Kostengruppensuche
   url: /kostengruppensuche/
-  icon: kgr.png
+  icon: win98-search_file-1.png
 
 - title: Ordinatrix
   url: /ordinatrix
+  icon: win98-graphedit-0.png
+
+# icons from https://win98icons.alexmeub.com/
