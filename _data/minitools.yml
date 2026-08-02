@@ -5,6 +5,10 @@ exlnk:
   url: /colorizah/
   icon: win98-paint_old-0.png
 
+- title: Why not visible?
+  url: /ac-whynotvisible/
+  icon: win98-msagent-2.png
+
 - title: Kostengruppensuche
   url: /kostengruppensuche/
   icon: win98-search_file-1.png
