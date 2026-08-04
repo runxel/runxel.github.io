@@ -9,6 +9,10 @@ exlnk:
   url: /ac-whynotvisible/
   icon: win98-msagent-2.png
 
+- title: Miter Finder
+  url: /miterfinder/
+  icon: win98-charmap_w2k.png
+
 - title: Kostengruppensuche
   url: /kostengruppensuche/
   icon: win98-search_file-1.png
